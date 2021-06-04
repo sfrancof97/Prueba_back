@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
-  post "/array/create" , to: "array#create"
-  get "/array/:id" , to: "array#show"
+  namespace :api do
+
+    namespace :v1 do
+      post "array/create" , to: "array#create"
+      get "array/:id" , to: "array#show"
+    end
+  end
 end

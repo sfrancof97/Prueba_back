@@ -3,7 +3,6 @@ class CreateInformation < ActiveRecord::Migration[6.1]
     create_table :information do |t|
       t.text :array, array: true
       t.timestamps
-     
     end
   end
 end
